@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+:root {
+  --position-one: translateX(-100%);
+  --position-two: translateX(100%);
+  --position-three: translateX(0);
+  --duration: 0.75s;
+  --timing: ease-in-out;
+  --color: #D9269A;
+  --fill-color: #161A3C;
+  --bg-color: #f9f9f9;
+  --cursor: default; 
+  --thin: 100;
+  --regular: 300;
+  --semi-bold: 700;
+  --bold: 900;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;  
+  letter-spacing: 2px;
+}
+
+body {
+  text-align: center;
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fill-color); 
+}
+
+/* CHROME */
+input[type='range'] {
+  overflow: hidden;
+  width: 80px;
+  -webkit-appearance: none;
+  background-color: var(--fill-color);
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  background-color: var(--fill-color);
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 10px;
+  -webkit-appearance: none;
+  height: 10px;
+  cursor: ew-resize;
+  background-color:  var(--color);
+  box-shadow: -80px 0 0 80px  var(--color);
+}
+
+  /** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: var(--fill-color);
+}
+
+input[type="range"]::-moz-range-track {  
+  background-color:  var(--color);
+}
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: var(--fill-color);
+}
+
+input[type="range"]::-ms-fill-upper {  
+  background-color:  var(--color);
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: var(--bold);
+}
+
+h2 {
+  font-size: 65px;
+  font-weight: var(--bold);
+}
+
+h3 {
+  font-size: 60px;
+  font-weight: var(--bold);
+}
+
+h4 {
+  font-size: 55px;
+  font-weight: var(--semi-bold);
+}
+
+h5 {
+  font-size: 50px;
+  font-weight: var(--semi-bold);
+}
+
+h6 {
+  font-size: 45px;
+  font-weight: var(--semi-bold);
+}
+
+p {
+  font-size: 32px;
+  font-weight: var(--regular);
+}
+
+p.subtitle {
+  font-size: 20px;
+  font-weight: var(--regular);
+  margin-bottom: 80px;
+}
+
+p#copy {
+  cursor: pointer;
+  font-weight: var(--bold);
+  color: var(--color);
+  display: none;
+}
+
+p#copy:hover {
+  color: var(--fill-color);
+}
+
+.fade-in {
+  animation: fadeIn var(--duration);
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  } 100% {
+    opacity: 100%;
+  }
+}
+
+#reset-one, #reset-two, #reset-three {
+  font-size: 12px;
+  letter-spacing: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888;
+  display: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 28px;
+  font-weight: var(--regular);
+}
+
+input {
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.text {
+  color: var(--color);
+  cursor: var(--cursor); 
+  width: 100%;
+}
+
+span.colorfill {
+  position: absolute;
+  overflow: hidden;
+  transform: var(--position-one);
+  transition: transform var(--duration) var(--timing);
+}
+
+h1:hover span.colorfill, h2:hover span.colorfill, h3:hover span.colorfill,
+h4:hover span.colorfill, h5:hover span.colorfill, h6:hover span.colorfill,
+a:hover span.colorfill, p:hover span.colorfill {
+  transform: var(--position-three);   
+}
+
+span.colorfill::before { 
+  display: inline-block;
+  color: var(--fill-color);
+  content: attr(data-content);
+  transform: var(--position-two);
+  transition: transform var(--duration) var(--timing);
+}
+
+h1:hover span.colorfill::before, h2:hover span.colorfill::before, h3:hover span.colorfill::before,
+h4:hover span.colorfill::before, h5:hover span.colorfill::before, h6:hover span.colorfill::before,
+a:hover span.colorfill::before, p:hover span.colorfill::before {
+  transform: var(--position-three);
+}
+
+.output-container{
+  text-align: left;
+  background-color: var(--fill-color);
+  color: var(--color);
+  height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.output-container::-webkit-scrollbar-thumb:hover {
+  background: var(--color); 
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colorfill- Create and visualize stunning CSS hover animations.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="generated-text">
+        <h1 class="text"><span class="colorfill" data-content="colorfill" aria-hidden="true"></span>colorfill</h1>
+    </div>
+        <p class="subtitle">Create stunning css hover animations</p>
+
+    <label for="text">Text:</label>
+    <input name="text" value="colorfill" type="text" placeholder="colorfill" id="word">   
+    <br><br>
+
+    <label for="text-tag">Tag:</label>
+    <select name="text-tag" id="tag">
+        <option value="h1">h1</option>
+        <option value="h2">h2</option>
+        <option value="h3">h3</option>
+        <option value="h4">h4</option>
+        <option value="h5">h5</option>
+        <option value="h6">h6</option>
+        <option value="p">p</option>
+        <option value="a">a</option>
+    </select>
+    <br><br>
+
+    <label for="color">Color:</label>
+    <input name="color" type="color" placeholder="#ca3434" value="#ff61c8" id="color"> 
+    <br><br>
+
+    <label for="fill-color">Fill:</label>
+    <input name="fill-color" type="color" placeholder="#000000" value="#3e309c" id="fill-color"> 
+    <br><br>
+
+    <label for="cursor">Cursor:</label>
+    <select name="cursor" id="cursor">
+        <option value="default">default</option>
+        <option value="auto">auto</option>
+        <option value="none">none</option>
+        <option value="context-menu">context-menu</option>
+        <option value="help">help</option>
+        <option value="pointer">pointer</option>
+        <option value="progress">progress</option>
+        <option value="wait">wait</option>
+        <option value="cell">cell</option>
+        <option value="crosshair">crosshair</option>
+        <option value="text">text</option>
+        <option value="vertical-text">vertical-text</option>
+        <option value="alias">alias</option>
+        <option value="copy">copy</option>
+        <option value="move">move</option>
+        <option value="no-drop">no-drop</option>
+        <option value="not-allowed">not-allowed</option>
+        <option value="grab">grab</option>
+        <option value="grabbing">grabbing</option>
+        <option value="all-scroll">all-scroll</option>
+        <option value="col-resize">col-resize</option>
+        <option value="row-resize">row-resize</option>
+        <option value="n-resize">n-resize</option>
+        <option value="e-resize">e-resize</option>
+        <option value="s-resize">s-resize</option>
+        <option value="w-resize">w-resize</option>
+        <option value="ne-resize">ne-resize</option>
+        <option value="nw-resize">nw-resize</option>
+        <option value="se-resize">se-resize</option>
+        <option value="sw-resize">sw-resize</option>
+        <option value="ew-resize">ew-resize</option>
+        <option value="ns-resize">ns-resize</option>
+        <option value="nesw-resize">nesw-resize</option>
+        <option value="nwse-resize">nwse-resize</option>
+        <option value="zoom-in">zoom-in</option>
+        <option value="zoom-out">zoom-out</option>
+    </select>
+    <br><br>
+        <label for="duration">Duration:</label>
+        <input name="duration" type="range" min="0.25" max="5" value="0.75" step="0.1" id="duration">
+        <label id="duration-output">0.75s</label>
+        <br><br>
+        
+        <label for="position-one">Position 1:</label>
+        <input name="position-one" type="range" min="-100" max="100" value="-100" step="1" id="position-one">
+        <label id="position-one-output">-100%</label>
+        <p id="reset-one">Reset</p>
+        <br><br>
+
+        <label for="position-two">Position 2:</label>
+        <input name="position-two" type="range" min="-100" max="100" value="100" step="1" id="position-two">
+        <label id="position-two-output">100%</label>
+        <p id="reset-two">Reset</p>
+        <br><br>
+
+        <label for="position-three">Position 3:</label>
+        <input name="position-three" type="range" min="-100" max="100" value="0" step="1" id="position-three">
+        <label id="position-three-output">0%</label>
+        <p id="reset-three">Reset</p>
+        <br><br>
+
+        <label for="axis">Axis:</label>
+       <select name="axis" id="axis">
+           <option value="X">X</option>
+           <option value="Y">Y</option>
+       </select>
+        <br><br>
+
+        <label for="timing">Timing:</label>
+       <select name="timing" id="timing">
+           <option value="ease">ease</option>
+           <option value="ease-in">ease-in</option>
+           <option value="ease-out">ease-out</option>
+           <option value="ease-in-out">ease-in-out</option>
+           <option value="linear">linear</option>
+       </select>
+       <br><br>        
+       
+       <p id="copy"></p>
+
+    <div class="output-container">        
+        <div id="css-output"></div>        
+        <div id="html-output"></div>   
+    </div>   
+
+<script src="colorfill.js"></script>
+</body>
+</html>

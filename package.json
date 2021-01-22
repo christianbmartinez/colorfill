@@ -1,0 +1,15 @@
+{
+  "name": "colorfillapp",
+  "version": "1.0.0",
+  "description": "An application for visualizing css text fill effects",
+  "main": "colorfill.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/christianbmartinez/colorfill.git"
+  },
+  "author": "Christian B. Martinez",
+  "license": "MIT"
+}
