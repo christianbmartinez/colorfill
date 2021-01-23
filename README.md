@@ -8,7 +8,15 @@ An application for visualizing and creating stunning css text fill animations. [
 git clone https://github.com/christianbmartinez/colorfill.git
 ```
 
-Use a live server extension of your choice to view the app locally. 
+```
+npm install live-server
+```
+
+```
+npm start
+```
+
+Start script launches the colorfill app in your browser locally on port 8080
 
 ## Built With
 
