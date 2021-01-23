@@ -1,6 +1,6 @@
 # colorfill app
 
-An application for visualizing and creating stunning css text fill animations.
+An application for visualizing and creating stunning css text fill animations. [View on Codepen](https://codepen.io/christianmartinez/pen/KKgyywR)
 
 ### Install
 
