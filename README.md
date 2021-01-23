@@ -1,15 +1,14 @@
-# colorfill app
+### colorfill
 
-An application for visualizing and creating stunning css text fill animations.
+An application for visualizing and creating stunning css text fill animations. [View on Codepen](https://codepen.io/christianmartinez/pen/KKgyywR)
 
-### Install
+## Install
 
 ```
-// Master Branch //
 git clone https://github.com/christianbmartinez/colorfill.git
 ```
 
-Make changes, and integrate this project however you see fit. Please credit me and my website if used commercially. Enjoy!
+Use a live server extension of your choice to view the app locally. 
 
 ## Built With
 
@@ -17,9 +16,8 @@ HTML, CSS, JS
 
 ## Author
 
-Christian B. Martinez
+Christian B. Martinez, www.christianbmartinez.com
 
 ## License
 
-This project is licensed under the MIT License
-# colorfill
+You are free to use, expand upon, or edit this application as you see fit. Please credit my name and website if used commercially.
