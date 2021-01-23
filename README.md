@@ -8,7 +8,7 @@ An application for visualizing and creating stunning css text fill animations. [
 git clone https://github.com/christianbmartinez/colorfill.git
 ```
 
-Make changes, and integrate this project however you see fit. Please credit me and/or my website if used commercially. Enjoy!
+Use a live server extension of your choice to view the app locally. 
 
 ## Built With
 
