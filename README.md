@@ -16,7 +16,7 @@ HTML, CSS, JS
 
 ## Author
 
-Christian B. Martinez
+Christian B. Martinez [www.christianbmartinez.com](www.christianbmartinez.com)
 
 ## License
 
