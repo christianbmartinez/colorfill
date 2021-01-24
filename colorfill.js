@@ -14,6 +14,7 @@ License: You are free to use, edit, or build upon this code commercially under t
 
 */
 
+// Define variables
 var generatedText = document.getElementById('generated-text');
 var wordInput = document.getElementById('word');
 var word = wordInput.value;
@@ -49,15 +50,19 @@ var resetTwo = document.getElementById('reset-two');
 var resetThree = document.getElementById('reset-three');
 var copy = document.getElementById('copy');
 
+// Copy to clipboard
 function copyToClipboard() {
     var range = document.createRange();
     range.selectNode(outputContainer);
-    window.getSelection().removeAllRanges(); // clear current selection
-    window.getSelection().addRange(range); // to select text
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
     document.execCommand("copy");
-    window.getSelection().removeAllRanges();// to deselect
+    window.getSelection().removeAllRanges();
 }
 
+// Map all user input data to our css vars and render changes
+// Call render each time data changes, and display new result
+// Logic handles data dynamically, concatenated results
 axis.onchange = () => {
     getAxis = axis.value;
     getAxis === 'X' ? 
@@ -164,7 +169,11 @@ timingInput.onchange = () =>{
     document.documentElement.style.setProperty('--timing', timing);
     render();
 }
-    
+
+// The render function is outputted to a container where the user can view
+// the code, and a button is used to allow the user to copy their code.
+// For sake of simplicity, we use on div for css and html output. 
+ 
  function render(){
     copy.innerHTML = 'Copy';
     outputContainer.classList.add('fade-in');
