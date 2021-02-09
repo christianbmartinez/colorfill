@@ -1,7 +1,7 @@
 {
   "name": "colorfillapp",
   "version": "1.0.0",
-  "description": "An application for visualizing css text fill effects",
+  "description": "An application for visualizing css text fill animations",
   "main": "colorfill.js",
   "scripts": {
     "start": "live-server"

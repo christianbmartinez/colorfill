@@ -1,6 +1,8 @@
 ### colorfill
 
-An application for visualizing and creating stunning css text fill animations. [View on Codepen](https://codepen.io/christianmartinez/pen/KKgyywR)
+An application for visualizing and creating stunning css text fill animations. [View on Codepen](https://codepen.io/christianmartinez/pen/KKgyywR) 
+
+Want more than one colorfill on your web app? Check out colorfilljs [here](https://github.com/christianbmartinez/colorfilljs.git)
 
 ## Install
 
@@ -8,12 +10,10 @@ An application for visualizing and creating stunning css text fill animations. [
 git clone https://github.com/christianbmartinez/colorfill.git
 ```
 
-```
-npm install live-server
-```
+In root: 
 
 ```
-npm start
+npm install && npm start
 ```
 
 Start script launches the colorfill app in your browser locally on port 8080
@@ -25,7 +25,3 @@ HTML, CSS, JS
 ## Author
 
 Christian B. Martinez, www.christianbmartinez.com
-
-## License
-
-You are free to use, expand upon, or edit this application as you see fit. Please credit my name and website if used commercially.
